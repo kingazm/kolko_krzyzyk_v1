@@ -50,70 +50,56 @@ void kolko()
          {
              punkty_plansza[0][0]=1;
              plansza[0][0]='O';
-             suma1=+1;
-             suma4=+1;
-             suma7=+1;
+             
             
          }
          else if(ruch_kolko=='B'||ruch_kolko=='b')
          {
              punkty_plansza[0][1]=1;
              plansza[0][1]='O';
-             suma1=+1;
-             suma5=+1;
+            
          }
          else if(ruch_kolko=='C'||ruch_kolko=='c')
          {
              punkty_plansza[0][2]=1;
              plansza[0][2]='O';
-             suma3=+1;
-             suma6=+1;
-             suma8=+1;
+            
          }
          else if(ruch_kolko=='D'||ruch_kolko=='d')
          {
              punkty_plansza[1][0]=1;
              plansza[1][0]='O';
-             suma2=+1;
-             suma4=+1;
+            
          }
          else if(ruch_kolko=='E'||ruch_kolko=='e')
          {
              punkty_plansza[1][1]=1;
              plansza[1][1]='O';
-             suma2=+1;
-             suma7=+1;
-             suma8=+1;
+            
          }
          else if(ruch_kolko=='F'||ruch_kolko=='f')
          {
              punkty_plansza[1][2]=1;
              plansza[1][2]='O';
-             suma2=+1;
-             suma6=+1;
+             
          }
          else if(ruch_kolko=='G'||ruch_kolko=='g')
          {
              punkty_plansza[2][0]=1;
              plansza[2][0]='O';
-             suma3=+1;
-             suma4=+1;
-             suma8=+1;
+             
          }
          else if(ruch_kolko=='H'||ruch_kolko=='h')
          {
              punkty_plansza[2][1]=1;
              plansza[2][1]='O';
-             suma3=+1;
-             suma5=+1;
+             
          }
          else if(ruch_kolko=='I'||ruch_kolko=='i')
          {
              punkty_plansza[2][2]=1;
              plansza[2][2]='O';
-             suma3=+1;
-             suma6=+1;
-             suma7=+1;
+             
          }
          
      
@@ -122,10 +108,9 @@ void kolko()
      
      else
      {
-         cout<<"REMIS";
+         cout<<"REMIS"<<endl;
      }
     
-    cout<<suma7;
     
 };
 
@@ -209,7 +194,7 @@ void krzyzyk()
        }
     else
        {
-           cout<<"REMIS";
+           cout<<"REMIS"<<endl;
        }
       
     
