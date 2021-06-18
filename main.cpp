@@ -45,7 +45,7 @@ void kolko()
     int suma7 = punkty_plansza[0][0] + punkty_plansza[1][1] + punkty_plansza[2][2];
     int suma8 = punkty_plansza[0][2] + punkty_plansza[1][1] + punkty_plansza[2][0];
     
-    if(suma1==15||suma2==15||suma3==15||suma4==15||suma5==15||suma6==15||suma7==15){
+    if(suma1==15||suma2==15||suma3==15||suma4==15||suma5==15||suma6==15||suma7==15||suma8==15){
          cout<<"KONIEC GRY, WYGRYWA GRACZ KRZYZYK"<<endl;
         exit(1);
      }
@@ -139,12 +139,12 @@ void krzyzyk()
     int suma7 = punkty_plansza[0][0] + punkty_plansza[1][1] + punkty_plansza[2][2];
     int suma8 = punkty_plansza[0][2] + punkty_plansza[1][1] + punkty_plansza[2][0];
     
-    if(suma1==15||suma2==15||suma3==15||suma4==15||suma5==15||suma6==15||suma7==15){
+    if(suma1==15||suma2==15||suma3==15||suma4==15||suma5==15||suma6==15||suma7==15||suma8==15){
            cout<<"KONIEC GRY, WYGRYWA GRACZ KRZYZYK"<<endl;
         exit(1);
        
        }
-    else if(suma1==3||suma2==3||suma3==3||suma4==3||suma5==3||suma6==3||suma7==3){
+    else if(suma1==3||suma2==3||suma3==3||suma4==3||suma5==3||suma6==3||suma7==3||suma8==3){
            cout<<"KONIEC GRY, WYGRYWA GRACZ KOLKO"<<endl;
         exit(1);
         
