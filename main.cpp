@@ -14,11 +14,25 @@ using namespace std;
 int punkty_plansza[3][3];
 char plansza[3][3]; //wyswietlana plansza
 
-
-
 char ruch_kolko;
 
 char ruch_krzyzyk;
+
+void pokaz_plansze()
+{
+     cout<<" "<<endl;
+    for(int j=0; j<2; j++)
+    {
+        cout<<" "<<plansza[j][0]<<" | ";
+        cout<<plansza[j][1]<<" | ";
+        cout<<plansza[j][2]<<endl;
+        cout<<"---|---|---"<<endl;
+    }
+    cout<<" "<<plansza[2][0]<<" | ";
+    cout<<plansza[2][1]<<" | ";
+    cout<<plansza[2][2]<<endl;
+    cout<<" "<<endl;
+};
 
 void kolko()
 {
@@ -50,20 +64,20 @@ void kolko()
          {
              punkty_plansza[0][0]=1;
              plansza[0][0]='O';
-             
+            
             
          }
          else if(ruch_kolko=='B'||ruch_kolko=='b')
          {
              punkty_plansza[0][1]=1;
              plansza[0][1]='O';
-            
+             
          }
          else if(ruch_kolko=='C'||ruch_kolko=='c')
          {
              punkty_plansza[0][2]=1;
              plansza[0][2]='O';
-            
+             
          }
          else if(ruch_kolko=='D'||ruch_kolko=='d')
          {
@@ -81,7 +95,7 @@ void kolko()
          {
              punkty_plansza[1][2]=1;
              plansza[1][2]='O';
-             
+            
          }
          else if(ruch_kolko=='G'||ruch_kolko=='g')
          {
@@ -99,7 +113,7 @@ void kolko()
          {
              punkty_plansza[2][2]=1;
              plansza[2][2]='O';
-             
+        
          }
          
      
@@ -248,43 +262,18 @@ void gra()
     while(punkty_plansza[0][0]==0 || punkty_plansza[0][1]==0 || punkty_plansza[0][2]==0 || punkty_plansza[1][0]==0 || punkty_plansza[1][1]==0 || punkty_plansza[1][2]==0 || punkty_plansza[2][0]==0 || punkty_plansza[2][1]==0 || punkty_plansza[2][2]==0)
     {
         
-        for(int j=0; j<2; j++)
-         {
-             cout<<" "<<plansza[j][0]<<" | ";
-             cout<<plansza[j][1]<<" | ";
-             cout<<plansza[j][2]<<endl;
-             cout<<"---|---|---"<<endl;
-         } cout<<" "<<plansza[2][0]<<" | ";
-                cout<<plansza[2][1]<<" | ";
-                cout<<plansza[2][2]<<endl;
+        pokaz_plansze();
+        kolko();
         
-    
-    kolko();
         
-        cout<<" "<<endl;
-                       cout<<"AKTUALIZACJA PLANSZY"<<endl;
-        for(int k=0; k<2; k++)
-                {
-                    cout<<" "<<plansza[k][0]<<" | ";
-                    cout<<plansza[k][1]<<" | ";
-                    cout<<plansza[k][2]<<endl;
-                    cout<<"---|---|---"<<endl;
-                } cout<<" "<<plansza[2][0]<<" | ";
-                       cout<<plansza[2][1]<<" | ";
-                       cout<<plansza[2][2]<<endl;
+        pokaz_plansze();
+        krzyzyk();
        
-                    
-    krzyzyk();
-       
-        
-        
-        
     }
    
     
 };
 
-    
 
 int main() {
     
@@ -292,4 +281,5 @@ int main() {
     gra();
     
     return 0;
+    
 }
